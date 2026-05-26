@@ -1,0 +1,6 @@
+{
+  "name": "PomoFlow",
+  "description": "A productivity-focused Pomodoro timer with AI task estimation, mood-based music, and focus locking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

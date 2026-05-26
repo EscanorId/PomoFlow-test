@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --bg-end: #020617;
+  --bg-current: #1c1917;
+  --color-accent: #f59e0b;
+  --theme-card: rgba(41, 37, 36, 0.5);
+  --theme-border: rgba(245, 158, 11, 0.15);
+}
+
+/* 1. Classic (Klasik) – warm neutrals and timeless tones */
+[data-theme='classic'][data-mode='FOCUS'] { 
+  --bg-current: #1c1917; 
+  --color-accent: #f59e0b; 
+  --theme-card: rgba(41, 37, 36, 0.55); 
+  --theme-border: rgba(245, 158, 11, 0.2); 
+}
+[data-theme='classic'][data-mode='SHORT_BREAK'] { 
+  --bg-current: #2d1610; 
+  --color-accent: #f97316; 
+  --theme-card: rgba(45, 22, 16, 0.55); 
+  --theme-border: rgba(249, 115, 22, 0.2); 
+}
+[data-theme='classic'][data-mode='LONG_BREAK'] { 
+  --bg-current: #142211; 
+  --color-accent: #84cc16; 
+  --theme-card: rgba(20, 34, 17, 0.55); 
+  --theme-border: rgba(132, 204, 22, 0.2); 
+}
+[data-theme='classic'][data-mode='ULTRADIAN'] { 
+  --bg-current: #291e13; 
+  --color-accent: #d97706; 
+  --theme-card: rgba(41, 30, 19, 0.55); 
+  --theme-border: rgba(217, 119, 6, 0.2); 
+}
+[data-theme='classic'][data-mode='ULTRADIAN_BREAK'] { 
+  --bg-current: #10221c; 
+  --color-accent: #10b981; 
+  --theme-card: rgba(16, 34, 28, 0.55); 
+  --theme-border: rgba(16, 185, 129, 0.2); 
+}
+
+/* 2. Midnight (Tengah Malam) – deep navy, dark blues, and cool dark hues */
+[data-theme='midnight'][data-mode='FOCUS'] { 
+  --bg-current: #0a0f1d; 
+  --color-accent: #6366f1; 
+  --theme-card: rgba(15, 23, 42, 0.55); 
+  --theme-border: rgba(99, 102, 241, 0.2); 
+}
+[data-theme='midnight'][data-mode='SHORT_BREAK'] { 
+  --bg-current: #14113c; 
+  --color-accent: #a855f7; 
+  --theme-card: rgba(20, 17, 60, 0.55); 
+  --theme-border: rgba(168, 85, 247, 0.2); 
+}
+[data-theme='midnight'][data-mode='LONG_BREAK'] { 
+  --bg-current: #02231c; 
+  --color-accent: #06b6d4; 
+  --theme-card: rgba(2, 35, 28, 0.55); 
+  --theme-border: rgba(6, 182, 212, 0.2); 
+}
+[data-theme='midnight'][data-mode='ULTRADIAN'] { 
+  --bg-current: #110f3c; 
+  --color-accent: #4f46e5; 
+  --theme-card: rgba(17, 15, 60, 0.55); 
+  --theme-border: rgba(79, 70, 229, 0.2); 
+}
+[data-theme='midnight'][data-mode='ULTRADIAN_BREAK'] { 
+  --bg-current: #071a2a; 
+  --color-accent: #0284c7; 
+  --theme-card: rgba(7, 26, 42, 0.55); 
+  --theme-border: rgba(2, 132, 199, 0.2); 
+}
+
+/* 3. Forest (Hutan) – earthy greens, mossy tones, and natural accents */
+[data-theme='forest'][data-mode='FOCUS'] { 
+  --bg-current: #042f1a; 
+  --color-accent: #10b981; 
+  --theme-card: rgba(4, 47, 26, 0.6); 
+  --theme-border: rgba(16, 185, 129, 0.25); 
+}
+[data-theme='forest'][data-mode='SHORT_BREAK'] { 
+  --bg-current: #2a2505; 
+  --color-accent: #eab308; 
+  --theme-card: rgba(42, 37, 5, 0.6); 
+  --theme-border: rgba(234, 179, 8, 0.25); 
+}
+[data-theme='forest'][data-mode='LONG_BREAK'] { 
+  --bg-current: #1c1c1e; 
+  --color-accent: #84cc16; 
+  --theme-card: rgba(28, 28, 30, 0.6); 
+  --theme-border: rgba(132, 204, 22, 0.25); 
+}
+[data-theme='forest'][data-mode='ULTRADIAN'] { 
+  --bg-current: #022313; 
+  --color-accent: #059669; 
+  --theme-card: rgba(2, 35, 19, 0.6); 
+  --theme-border: rgba(5, 150, 105, 0.25); 
+}
+[data-theme='forest'][data-mode='ULTRADIAN_BREAK'] { 
+  --bg-current: #1c2712; 
+  --color-accent: #22c55e; 
+  --theme-card: rgba(28, 39, 18, 0.6); 
+  --theme-border: rgba(34, 197, 94, 0.25); 
+}
+
+/* 4. Sakura (Sakura) – soft pinks, blossoms, and gentle pastels */
+[data-theme='sakura'][data-mode='FOCUS'] { 
+  --bg-current: #3b071a; 
+  --color-accent: #f472b6; 
+  --theme-card: rgba(59, 7, 26, 0.55); 
+  --theme-border: rgba(244, 114, 182, 0.2); 
+}
+[data-theme='sakura'][data-mode='SHORT_BREAK'] { 
+  --bg-current: #3a104c; 
+  --color-accent: #d946ef; 
+  --theme-card: rgba(58, 16, 76, 0.55); 
+  --theme-border: rgba(217, 70, 239, 0.2); 
+}
+[data-theme='sakura'][data-mode='LONG_BREAK'] { 
+  --bg-current: #2a0835; 
+  --color-accent: #c084fc; 
+  --theme-card: rgba(42, 8, 53, 0.55); 
+  --theme-border: rgba(192, 132, 252, 0.2); 
+}
+[data-theme='sakura'][data-mode='ULTRADIAN'] { 
+  --bg-current: #440c24; 
+  --color-accent: #ec4899; 
+  --theme-card: rgba(68, 12, 36, 0.55); 
+  --theme-border: rgba(236, 72, 153, 0.2); 
+}
+[data-theme='sakura'][data-mode='ULTRADIAN_BREAK'] { 
+  --bg-current: #2c044c; 
+  --color-accent: #a855f7; 
+  --theme-card: rgba(44, 4, 76, 0.55); 
+  --theme-border: rgba(168, 85, 247, 0.2); 
+}
+
+@layer base {
+  body {
+    @apply transition-colors duration-1000 bg-slate-950 text-white selection:bg-indigo-500/30;
+  }
+}
+
+.theme-active {
+  background: radial-gradient(circle at top right, var(--bg-current), var(--bg-end));
+  transition: background 1s ease;
+}
+
+/* Dynamic progress ring via CSS variable */
+.ring-accent {
+  stroke: var(--color-accent);
+  transition: stroke 1s ease;
+}
+
+/* Custom range slider thumb styling */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  cursor: pointer;
+  border: 2px solid white;
+  transition: background-color 1s ease;
+}
